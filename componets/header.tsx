@@ -3,7 +3,6 @@ import Image from 'next/image'
 import {Work_Sans} from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from "next/link";
-import logo from '../public/Group.png'
 
 
 const inter = Work_Sans({ subsets: ['latin'] })
@@ -13,7 +12,7 @@ export default function Header() {
         <>
             <header>
                 <div className='header-main header-logo'>
-                    <Image src={logo} alt='logo-header' className='Logo'></Image>
+                    <img src="/images/Group.png" alt='logo-header' className='Logo'></img>
                 </div>
 
                 <div className='header-main header-link-div'>

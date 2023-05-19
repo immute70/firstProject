@@ -1,13 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import hero from '../public/Hero.png'
-import vectorLeft from '../public/Vector-left.svg'
-import vectorRight from '../public/Vector-right.svg'
-import vectorHead from '../public/Vector-headphones.png'
-import icon from '../public/icon.png'
-import avatar from '../public/avatar.png'
 
 
 
@@ -24,7 +17,7 @@ export default function Home() {
       </Head>
       <main>
           <div className='main-hero-div'>
-              {/*<Image src={hero} alt='main-background' className='main-hero'></Image>*/}
+              {/*<img src={hero} alt='main-background' className='main-hero'></img>*/}
               <div className='main-text the-box'>
                 <h2><em>The</em>Box</h2>
               </div>
@@ -37,14 +30,14 @@ export default function Home() {
                         <div className='feature-p'><p>The National University of Architecture</p></div>
                         <div className='square-button square-button-left'>
                             <div className='inside-button'>
-                                <Image src={vectorLeft} alt={vectorLeft}></Image>
+                                <img src="/Vector-left.svg"></img>
                                 <p className='button-text'>Back</p>
                             </div>
                         </div>
                         <div className='square-button square-button-right'>
                             <div className='inside-button'>
                                 <p className='button-text'>Next</p>
-                                <Image src={vectorRight} alt={vectorRight}></Image>
+                                <img src="/Vector-right.svg"></img>
                             </div>
                         </div>
                     </div>
@@ -57,17 +50,17 @@ export default function Home() {
                   </div>
                   <div className='grid-3-col'>
                       <div className='colum'>
-                          <Image src={vectorHead} alt='VectorHeadphones'></Image>
+                          <img src="/images/Vector-headphones.png" alt='VectorHeadphones'></img>
                           <h4>Best Services</h4>
                           <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
                       </div>
                       <div className='colum'>
-                          <Image src={vectorHead} alt='VectorHEadphones'></Image>
+                          <img src="/images/Vector-headphones.png" alt='VectorHEadphones'></img>
                           <h4>Best Teams</h4>
                           <p>Cursus semper tellus volutpat aliquet lacus. </p>
                       </div>
                       <div className='colum'>
-                          <Image src={icon} alt='icon'></Image>
+                          <img src="/images/icon.png" alt='icon'></img>
                           <h4>Best Designs</h4>
                           <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
                       </div>

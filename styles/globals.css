@@ -83,7 +83,7 @@ main {
   position: relative;
   justify-content: center;
 
-  background-image: url(/public/Hero.png);
+  background-image: url(/images/Hero.png);
   background-size: cover;
   height: 100vh;
 }
@@ -258,7 +258,7 @@ main {
   align-items: center;
   height: 700px;
   width: 100%;
-  background-image: url("../public/avatar.png");
+  background-image: url(/images/avatar.png);
   background-repeat: no-repeat;
 }
 
