@@ -9,6 +9,8 @@ import vectorHead from '../public/Vector-headphones.png'
 import icon from '../public/icon.png'
 import avatar from '../public/avatar.png'
 
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
