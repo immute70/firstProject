@@ -83,7 +83,11 @@ export default function Home() {
               </div>
           </div>
           <div className='section-3 landSection'>
-              <div className='container'>hello</div>
+              <div className='container'>
+                  <div className='heading'>
+                      <h2>Services</h2>
+                  </div>
+              </div>
           </div>
       </main>
     </>
