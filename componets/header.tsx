@@ -12,7 +12,7 @@ export default function Header() {
         <>
             <header>
                 <div className='header-main header-logo'>
-                    <img src="/images/Group.png" alt='logo-header' className='Logo'></img>
+                    <img src="/images/Group.svg" alt='logo-header' className='Logo'></img>
                 </div>
 
                 <div className='header-main header-link-div'>

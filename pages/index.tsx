@@ -50,17 +50,17 @@ export default function Home() {
                   </div>
                   <div className='grid-3-col'>
                       <div className='colum'>
-                          <img src="/images/Vector-headphones.png" alt='VectorHeadphones'></img>
+                          <img src="/images/Vector-headphones.svg" alt='VectorHeadphones'></img>
                           <h4>Best Services</h4>
                           <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
                       </div>
                       <div className='colum'>
-                          <img src="/images/Vector-headphones.png" alt='VectorHEadphones'></img>
+                          <img src="/images/Vector-headphones.svg" alt='VectorHEadphones'></img>
                           <h4>Best Teams</h4>
                           <p>Cursus semper tellus volutpat aliquet lacus. </p>
                       </div>
                       <div className='colum'>
-                          <img src="/images/icon.png" alt='icon'></img>
+                          <img src="/images/icon.svg" alt='icon'></img>
                           <h4>Best Designs</h4>
                           <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
                       </div>
@@ -89,32 +89,32 @@ export default function Home() {
                   </div>
                   <div className='flex-6-col'>
                       <div className='flex-colum text-color-sec3'>
-                          <img src="/images/serv-icon1.png" alt=''></img>
+                          <img src="/images/serv-icon1.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Construction</h4>
                       </div>
                       <div className='flex-colum flex-colum-blue'>
-                          <img src="/images/serv-icon2.png" alt=''></img>
+                          <img src="/images/serv-icon2.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Renovation</h4>
                       </div>
                       <div className='flex-colum text-color-sec3'>
-                          <img src="/images/serv-icon3.png" alt=''></img>
+                          <img src="/images/serv-icon3.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Consultation</h4>
                       </div>
                       <div className='flex-colum flex-colum-blue'>
-                          <img src="/images/serv-icon4.png" alt=''></img>
+                          <img src="/images/serv-icon4.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Repair Services</h4>
                       </div>
                       <div className='flex-colum text-color-sec3'>
-                          <img src="/images/serv-icon5.png" alt=''></img>
+                          <img src="/images/serv-icon5.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Architecture</h4>
                       </div>
                       <div className='flex-colum flex-colum-blue'>
-                          <img src="/images/serv-icon6.png" alt=''></img>
+                          <img src="/images/serv-icon6.svg" alt=''></img>
                           <div className='underline'></div>
                           <h4>Electric</h4>
                       </div>
@@ -123,34 +123,42 @@ export default function Home() {
           </div>
           <div className='section-4 landSection'>
               <div className='container flex-blocks'>
-                  <div className='sec-block'>
+                  <div className='section-block'>
                       <div className='four-of-blocks'>
-                          <img src="/images/iconofblock1.png"></img>
-                          <h4>84</h4>
+                          <div className='flex-img-number'>
+                            <img src="/images/iconofblock1.svg"></img>
+                            <h4>84</h4>
+                          </div>
                           <div className='p-flex'>
                               <div className='vertical-line'></div>
                               <p>Happy Clients</p>
                           </div>
                       </div>
                       <div className='four-of-blocks'>
-                          <img src="/images/iconofblock2.png"></img>
-                          <h4>123</h4>
+                          <div className='flex-img-number'>
+                            <img src="/images/iconofblock2.svg"></img>
+                            <h4>123</h4>
+                          </div>
                           <div className='p-flex'>
                               <div className='vertical-line'></div>
                               <p>Projects Completed</p>
                           </div>
                       </div>
                       <div className='four-of-blocks'>
-                          <img src="/images/iconofblock3.png"></img>
-                          <h4>37</h4>
+                          <div className='flex-img-number'>
+                            <img src="/images/iconofblock3.svg"></img>
+                            <h4>37</h4>
+                          </div>
                           <div className='p-flex'>
                               <div className='vertical-line'></div>
                               <p>Awards Win</p>
                           </div>
                       </div>
                       <div className='four-of-blocks'>
-                          <img src="/images/iconofblock4.png"></img>
-                          <h4>34</h4>
+                          <div className='flex-img-number'>
+                            <img src="/images/iconofblock4.svg"></img>
+                            <h4>34</h4>
+                          </div>
                           <div className='p-flex'>
                               <div className='vertical-line'></div>
                               <p>Years in Business</p>
@@ -158,7 +166,9 @@ export default function Home() {
                       </div>
                   </div>
                   <div className='text-block'>
-
+                      <h3>30 Years Experience</h3>
+                      <p>Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+                      <a href='#'>Contact Us</a>
                   </div>
               </div>
           </div>
