@@ -87,6 +87,79 @@ export default function Home() {
                   <div className='heading'>
                       <h2>Services</h2>
                   </div>
+                  <div className='flex-6-col'>
+                      <div className='flex-colum text-color-sec3'>
+                          <img src="/images/serv-icon1.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Construction</h4>
+                      </div>
+                      <div className='flex-colum flex-colum-blue'>
+                          <img src="/images/serv-icon2.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Renovation</h4>
+                      </div>
+                      <div className='flex-colum text-color-sec3'>
+                          <img src="/images/serv-icon3.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Consultation</h4>
+                      </div>
+                      <div className='flex-colum flex-colum-blue'>
+                          <img src="/images/serv-icon4.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Repair Services</h4>
+                      </div>
+                      <div className='flex-colum text-color-sec3'>
+                          <img src="/images/serv-icon5.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Architecture</h4>
+                      </div>
+                      <div className='flex-colum flex-colum-blue'>
+                          <img src="/images/serv-icon6.png" alt=''></img>
+                          <div className='underline'></div>
+                          <h4>Electric</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div className='section-4 landSection'>
+              <div className='container flex-blocks'>
+                  <div className='sec-block'>
+                      <div className='four-of-blocks'>
+                          <img src="/images/iconofblock1.png"></img>
+                          <h4>84</h4>
+                          <div className='p-flex'>
+                              <div className='vertical-line'></div>
+                              <p>Happy Clients</p>
+                          </div>
+                      </div>
+                      <div className='four-of-blocks'>
+                          <img src="/images/iconofblock2.png"></img>
+                          <h4>123</h4>
+                          <div className='p-flex'>
+                              <div className='vertical-line'></div>
+                              <p>Projects Completed</p>
+                          </div>
+                      </div>
+                      <div className='four-of-blocks'>
+                          <img src="/images/iconofblock3.png"></img>
+                          <h4>37</h4>
+                          <div className='p-flex'>
+                              <div className='vertical-line'></div>
+                              <p>Awards Win</p>
+                          </div>
+                      </div>
+                      <div className='four-of-blocks'>
+                          <img src="/images/iconofblock4.png"></img>
+                          <h4>34</h4>
+                          <div className='p-flex'>
+                              <div className='vertical-line'></div>
+                              <p>Years in Business</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div className='text-block'>
+
+                  </div>
               </div>
           </div>
       </main>
