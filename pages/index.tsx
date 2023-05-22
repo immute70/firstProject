@@ -172,6 +172,84 @@ export default function Home() {
                   </div>
               </div>
           </div>
+          <div className='section-5 landSection'>
+              <div className='flex-sec-5 container'>
+                  <div className='sec-5-text'>
+                      <h4>Free consultation with exceptional quality</h4>
+                      <p>Just one call away: <u>+84 1102 2703</u></p>
+                  </div>
+                  <div className='sec-5-button'>
+                        <a href='#'>Get your consultation</a>
+                  </div>
+              </div>
+          </div>
+          <div className='section-6 landSection'>
+              <div className='container'>
+                  <div className='flex-container'>
+                      <div className='sec-6-text'>
+                          <h4>Projects</h4>
+                          <ul>
+                              <li className='point-ul'><a href='#'>All</a></li>
+                              <li><a href='#'>Commercial</a></li>
+                              <li><a href='#'>Residential</a></li>
+                              <li><a href='#'>Other</a></li>
+                          </ul>
+                      </div>
+                      <div className='publication-blocks'>
+                          <div className='publication'>
+                              <div className='publication1 container-public'>
+                                  <img src='/images/publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Wildstone Infra Hotel</h4>
+                                      <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                  </div>
+                              </div>
+                              <div className='publication2 container-public'>
+                                  <img src='/images/publication2.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Wish Stone Building</h4>
+                                      <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                  </div>
+                              </div>
+                              <div className='publication3 container-public'>
+                                  <img src='/images/publication3.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Mr. Parkinston’s House</h4>
+                                      <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                                  </div>
+                              </div>
+                              <div className='publication4 container-public'>
+                                  <img src='/images/publication4.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Oregano Height</h4>
+                                      <p>2464 Royal Ln. Mesa, New Jersey </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className='sec-6-buttons'>
+                              <div className='button-container button-left'>
+                                  <img src="/Vector-left.svg"></img>
+                                  <a href='#'>Back</a>
+                              </div>
+                              <div className='sec6-points'>
+                                  <div className='circle-points circle-points-blue'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                              </div>
+                              <div className='button-container button-right'>
+                                  <a href='#'>Next</a>
+                                  <img src="/Vector-right.svg"></img>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div className='section-7 landSection'>
+              <div className='container'></div>
+          </div>
       </main>
     </>
   )
