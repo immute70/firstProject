@@ -11,6 +11,7 @@ export default function Home() {
 
     const [toggleState, setToggleState] = useState(1)
 
+    // @ts-ignore
     const toggleTab = (index) => {
         setToggleState(index)
     }
