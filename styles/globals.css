@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -12,7 +13,14 @@ a {
 
 body {
   font-family: 'Work Sans', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
 .container {
@@ -488,11 +496,15 @@ main {
 }
 
 .publication {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 32px;
   padding-top: 80px;
+}
+
+.active-block {
+  display: flex;
 }
 
 ul {
@@ -524,6 +536,7 @@ li {
 }
 
 .point-ul a {
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;

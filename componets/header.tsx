@@ -17,8 +17,8 @@ export default function Header() {
 
                 <div className='header-main header-link-div'>
                     <Link href='/' className='header-link home'>Home</Link>
-                    <Link href='/about' className='header-link about'>About Us</Link>
-                    <Link href='/' className='header-link projects'>Projects</Link>
+                    <Link href='#about' className='header-link about'>About Us</Link>
+                    <Link href='#project' className='header-link projects'>Projects</Link>
                     <Link href='/' className='header-link services'>Services</Link>
                     <Link href='/' className='header-link contact-us'>Contact Us</Link>
                 </div>

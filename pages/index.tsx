@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import { useState } from "react";
 import styles from '@/styles/Home.module.css'
 
 
@@ -7,6 +8,13 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+    const [toggleState, setToggleState] = useState(1)
+
+    const toggleTab = (index) => {
+        setToggleState(index)
+    }
+
   return (
     <>
       <Head>
@@ -68,7 +76,7 @@ export default function Home() {
               </div>
 
           </div>
-          <div className='section-2 landSection'>
+          <div className='section-2 landSection' id='about'>
               <div className='container'>
                   <div className='about-end'>
                       <div className='about-us'>
@@ -183,20 +191,58 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className='section-6 landSection'>
+          <div className='section-6 landSection' id='project'>
               <div className='container'>
                   <div className='flex-container'>
                       <div className='sec-6-text'>
                           <h4>Projects</h4>
                           <ul>
-                              <li className='point-ul'><a href='#'>All</a></li>
-                              <li><a href='#'>Commercial</a></li>
-                              <li><a href='#'>Residential</a></li>
-                              <li><a href='#'>Other</a></li>
+                              <li className={toggleState === 1 ? "point-ul" : ""} onClick={() => toggleTab(1)}><a href="#project">All</a></li>
+                              <li className={toggleState === 2 ? "point-ul" : ""} onClick={() => toggleTab(2)}><a href="#project">Commercial</a></li>
+                              <li className={toggleState === 3 ? "point-ul" : ""} onClick={() => toggleTab(3)}><a href="#project">Residential</a></li>
+                              <li className={toggleState === 4 ? "point-ul" : ""} onClick={() => toggleTab(4)}><a href="#project">Other</a></li>
                           </ul>
                       </div>
+
+                      {/* All publication */}
+
                       <div className='publication-blocks'>
-                          <div className='publication'>
+
+                          <div className={toggleState === 1 ? "publication  active-block" : "publication"}>
+                              <div className='publication1 container-public'>
+                                  <img src='/images/publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Modern Sculpture</h4>
+                                      <p>5028 Cedar Lane, South Dakota</p>
+                                  </div>
+                              </div>
+                              <div className='publication2 container-public'>
+                                  <img src='/images/other-publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Contemporary Figure</h4>
+                                      <p>3216 Birch Street Santa Ana, Illinois</p>
+                                  </div>
+                              </div>
+                              <div className='publication3 container-public'>
+                                  <img src='/images/comercial-publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Contemporary Figure</h4>
+                                      <p>1719 Willow Avenue, Pennsylvania</p>
+                                  </div>
+                              </div>
+                              <div className='publication4 container-public'>
+                                  <img src='/images/publication4.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>New Artwork</h4>
+                                      <p>2310 Spruce Drive, New Jersey</p>
+                                  </div>
+                              </div>
+                          </div>
+
+                      {/* Publication 1 */}
+
+
+                          <div className={toggleState === 2 ? "publication  active-block" : "publication"}>
                               <div className='publication1 container-public'>
                                   <img src='/images/publication1.svg'></img>
                                   <div className='info-under-public'>
@@ -208,7 +254,7 @@ export default function Home() {
                                   <img src='/images/publication2.svg'></img>
                                   <div className='info-under-public'>
                                       <h4>Wish Stone Building</h4>
-                                      <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                      <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
                                   </div>
                               </div>
                               <div className='publication3 container-public'>
@@ -222,27 +268,94 @@ export default function Home() {
                                   <img src='/images/publication4.svg'></img>
                                   <div className='info-under-public'>
                                       <h4>Oregano Height</h4>
-                                      <p>2464 Royal Ln. Mesa, New Jersey </p>
+                                      <p>2464 Royal Ln. Mesa, New Jersey</p>
                                   </div>
                               </div>
                           </div>
-                          <div className='sec-6-buttons'>
-                              <div className='button-container button-left'>
-                                  <img src="/Vector-left.svg"></img>
-                                  <a href='#'>Back</a>
+
+                          {/* Publication 2 */}
+
+                          <div className={toggleState === 3 ? "publication  active-block" : "publication"}>
+                              <div className='publication1 container-public'>
+                                  <img src='/images/other-publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Modern Sculpture</h4>
+                                      <p>5028 Cedar Lane, South Dakota</p>
+                                  </div>
                               </div>
-                              <div className='sec6-points'>
-                                  <div className='circle-points circle-points-blue'></div>
-                                  <div className='circle-points'></div>
-                                  <div className='circle-points'></div>
-                                  <div className='circle-points'></div>
-                                  <div className='circle-points'></div>
+                              <div className='publication2 container-public'>
+                                  <img src='/images/other-publication2.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Contemporary Figure</h4>
+                                      <p>3216 Birch Street Santa Ana, Illinois</p>
+                                  </div>
                               </div>
-                              <div className='button-container button-right'>
-                                  <a href='#'>Next</a>
-                                  <img src="/Vector-right.svg"></img>
+                              <div className='publication3 container-public'>
+                                  <img src='/images/other-publication3.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>Contemporary Figure</h4>
+                                      <p>1719 Willow Avenue, Pennsylvania</p>
+                                  </div>
+                              </div>
+                              <div className='publication4 container-public'>
+                                  <img src='/images/other-publication4.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>New Artwork</h4>
+                                      <p>2310 Spruce Drive, New Jersey</p>
+                                  </div>
                               </div>
                           </div>
+
+                          {/* Publication 3 */}
+
+                          <div className={toggleState === 4 ? "publication  active-block" : "publication"}>
+                              <div className='publication1 container-public'>
+                                  <img src='/images/comercial-publication1.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>DOLCE&GABBANA</h4>
+                                      <p>Via Carlo Goldoni, 10, Italy</p>
+                                  </div>
+                              </div>
+                              <div className='publication2 container-public'>
+                                  <img src='/images/comercial-publication2.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>GUCCI</h4>
+                                      <p>Via de' Tornabuoni, Italy</p>
+                                  </div>
+                              </div>
+                              <div className='publication3 container-public'>
+                                  <img src='/images/comercial-publication3.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>CELINE</h4>
+                                      <p>16 rue Vivienne, France</p>
+                                  </div>
+                              </div>
+                              <div className='publication4 container-public'>
+                                  <img src='/images/comercial-publication4.svg'></img>
+                                  <div className='info-under-public'>
+                                      <h4>PRADA</h4>
+                                      <p>Via Orobia, 3, Italy</p>
+                                  </div>
+                              </div>
+                          </div>
+
+                          {/*<div className='sec-6-buttons'>*/}
+                          {/*    <div className='button-container button-left'>*/}
+                          {/*        <img src="/Vector-left.svg"></img>*/}
+                          {/*        <a href='#'>Back</a>*/}
+                          {/*    </div>*/}
+                          {/*    <div className='sec6-points'>*/}
+                          {/*        <div className='circle-points circle-points-blue'></div>*/}
+                          {/*        <div className='circle-points'></div>*/}
+                          {/*        <div className='circle-points'></div>*/}
+                          {/*        <div className='circle-points'></div>*/}
+                          {/*        <div className='circle-points'></div>*/}
+                          {/*    </div>*/}
+                          {/*    <div className='button-container button-right'>*/}
+                          {/*        <a href='#'>Next</a>*/}
+                          {/*        <img src="/Vector-right.svg"></img>*/}
+                          {/*    </div>*/}
+                          {/*</div>*/}
                       </div>
                   </div>
               </div>
