@@ -198,10 +198,10 @@ export default function Home() {
                       <div className='sec-6-text'>
                           <h4>Projects</h4>
                           <ul>
-                              <li className={toggleState === 1 ? "point-ul" : ""} onClick={() => toggleTab(1)}><a href="#project">All</a></li>
-                              <li className={toggleState === 2 ? "point-ul" : ""} onClick={() => toggleTab(2)}><a href="#project">Commercial</a></li>
-                              <li className={toggleState === 3 ? "point-ul" : ""} onClick={() => toggleTab(3)}><a href="#project">Residential</a></li>
-                              <li className={toggleState === 4 ? "point-ul" : ""} onClick={() => toggleTab(4)}><a href="#project">Other</a></li>
+                              <li className={toggleState === 1 ? "point-ul" : ""} onClick={() => toggleTab(1)}><a>All</a></li>
+                              <li className={toggleState === 2 ? "point-ul" : ""} onClick={() => toggleTab(2)}><a>Commercial</a></li>
+                              <li className={toggleState === 3 ? "point-ul" : ""} onClick={() => toggleTab(3)}><a>Residential</a></li>
+                              <li className={toggleState === 4 ? "point-ul" : ""} onClick={() => toggleTab(4)}><a>Other</a></li>
                           </ul>
                       </div>
 
@@ -340,29 +340,92 @@ export default function Home() {
                               </div>
                           </div>
 
-                          {/*<div className='sec-6-buttons'>*/}
-                          {/*    <div className='button-container button-left'>*/}
-                          {/*        <img src="/Vector-left.svg"></img>*/}
-                          {/*        <a href='#'>Back</a>*/}
-                          {/*    </div>*/}
-                          {/*    <div className='sec6-points'>*/}
-                          {/*        <div className='circle-points circle-points-blue'></div>*/}
-                          {/*        <div className='circle-points'></div>*/}
-                          {/*        <div className='circle-points'></div>*/}
-                          {/*        <div className='circle-points'></div>*/}
-                          {/*        <div className='circle-points'></div>*/}
-                          {/*    </div>*/}
-                          {/*    <div className='button-container button-right'>*/}
-                          {/*        <a href='#'>Next</a>*/}
-                          {/*        <img src="/Vector-right.svg"></img>*/}
-                          {/*    </div>*/}
-                          {/*</div>*/}
+                          <div className='sec-6-buttons'>
+                              <div className='button-container button-left'>
+                                  <img src="/Vector-left.svg"></img>
+                                  <a href='#'>Back</a>
+                              </div>
+                              <div className='sec6-points'>
+                                  <div className='circle-points circle-points-blue'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                                  <div className='circle-points'></div>
+                              </div>
+                              <div className='button-container button-right'>
+                                  <a href='#'>Next</a>
+                                  <img src="/Vector-right.svg"></img>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
           <div className='section-7 landSection'>
-              <div className='container'></div>
+              <div className='container'>
+                  <div className="form-container">
+                      <div className="form-text">
+                          <h4>What can us do for you?</h4>
+                          <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+                      </div>
+                      <div className="input-form">
+                          <form className="input-form2">
+                              <div className="form-group">
+                                  <input className="form-input" placeholder="Your Name*"/>
+
+                              </div>
+                              <div className="form-group">
+                                  <input className="form-input" placeholder='Email*'/>
+
+                              </div>
+                              <div className="form-group">
+                                  <input className="form-input" placeholder="Reason for contacting*"/>
+
+                              </div>
+                              <div className="form-group">
+                                  <input className="form-input" placeholder="Phone"/>
+
+                              </div>
+                              <div className="form-group">
+                                  <textarea className="form-input form-input-width" placeholder='Message'/>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div className='form-button'>
+                      <p><span className='required'>*</span> indicates a required field</p>
+                      <div className="button-below-form">
+                          <a>Submit</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div className="section-8 landSection">
+              <div className='sec-8-flex container'>
+                  <div className='sec-8-text'>
+                      <p><span>Address:</span> 6391 Elgin St. Celina, Delaware 10299</p>
+                      <p><span>Phone:</span>  +84 1102 2703</p>
+                      <p><span>Email:</span> hello@thebox.com</p>
+                      <div className="sec-8-logo the-box">
+                          <img src="/images/Group.svg" alt='logo-header' className='Logo'></img>
+                          <h2><em>The</em>Box</h2>
+                      </div>
+
+                  </div>
+                  <div className='sec-8-input'>
+                      <p>Newsletter:</p>
+                      <div className="form-and-button">
+                          <input placeholder='Your email here'></input>
+                          <a>Subscribe</a>
+                      </div>
+                      <p>Social:</p>
+                      <div className='social'>
+                          <img src='/images/icon-facebook.svg'></img>
+                          <img src='/images/icon-linkedin.svg'></img>
+                          <img src='/images/icon-twitter.svg'></img>
+                      </div>
+                  </div>
+              </div>
           </div>
       </main>
     </>

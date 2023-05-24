@@ -80,10 +80,7 @@ header {
 
 /* Main section */
 
-main {
-  height: 646px;
-  background-repeat: no-repeat;
-}
+
 
 .main-hero-div {
   display: flex;
@@ -102,10 +99,10 @@ main {
 .main-text {
   position: absolute;
   top: 0;
+  margin-top: 118px;
 }
 
 .the-box {
-  margin-top: 118px;
   font-weight: 700;
   color: #2947A9;
   font-size: 20px;
@@ -524,6 +521,7 @@ li {
   line-height: 28px;
   text-align: center;
   color: #C2C7D6;
+  cursor: pointer;
 
 }
 
@@ -629,6 +627,258 @@ li {
 
 .circle-points-blue {
   background-color: #2947A9;
+}
+
+/* Section 7 */
+
+.section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8F7;
+
+}
+
+.form-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.form-text h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #292E3D;
+}
+
+.form-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #292E3D;
+  margin: 20px 0 38px 0;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  position: relative;
+  margin-bottom: 20px;
+  /*transition: 0.3s;*/
+
+}
+
+.form-group:last-child {
+  margin-bottom: 8px;
+}
+
+.input-form2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 620px;
+
+}
+
+.form-input {
+  padding: 10px 8px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  width: 280px;
+  outline: none;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Work Sans";
+}
+
+.form-input-width {
+  width: 592px;
+  height: 135px;
+
+}
+
+
+.form-input:focus-visible {
+  outline: 1px solid #2947A9;
+
+}
+
+
+
+textarea {
+  resize: none;
+  height: 140px;
+
+}
+
+
+
+
+footer {
+  display: flex;
+  height: 70px;
+  background-color: #2947A9;
+  align-items: center;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 1200px;
+}
+
+.footer-p {
+
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+}
+
+.form-button p {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #667299;
+}
+
+.button-below-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.button-below-form a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  width: 271px;
+  background-color: #2947A9;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.required {
+  color: #C40303;
+}
+
+
+/* Section 8*/
+
+.sec-8-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sec-8-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #292E3D;
+  margin-bottom: 24px;
+}
+
+.sec-8-text p span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  font-variant: all-small-caps;
+  color: #2947A9;
+  margin-right: 13px;
+}
+
+.sec-8-text p span:nth-child(2) {
+  margin-left: 34px;
+}
+
+.sec-8-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.sec-8-logo img {
+  margin-right: 14px;
+}
+
+.sec-8-input p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  font-variant: all-small-caps;
+  color: #2947A9;
+  margin-bottom: 16px;
+}
+
+.form-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-and-button input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 8px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  background: #FFFFFF;
+  width: 280px;
+  transition: 0.3s;
+  outline: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  font-family: "Work Sans";
+  margin-right: 8px;
+
+}
+
+.form-and-button input:focus-visible {
+  border: 1px solid #2947A9;
+}
+
+.form-and-button a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #F9995D;
+  border-radius: 4px;
+  width: 136px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sec-8-input img {
+  margin-right: 18px;
 }
 
 
