@@ -15,13 +15,15 @@ export default function Header() {
                     <img src="/images/Group.svg" alt='logo-header' className='Logo'></img>
                 </div>
 
-                <div className='header-main header-link-div'>
+                <div className='header-main header-link-div container'>
                     <Link href='/' className='header-link home'>Home</Link>
                     <Link href='#about' className='header-link about'>About Us</Link>
                     <Link href='#project' className='header-link projects'>Projects</Link>
                     <Link href='/' className='header-link services'>Services</Link>
                     <Link href='/' className='header-link contact-us'>Contact Us</Link>
+                    <img src='/images/icons8-menu.svg' className='btn-header'></img>
                 </div>
+
             </header>
         </>
     )
