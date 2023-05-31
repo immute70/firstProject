@@ -35,8 +35,6 @@ html {
 /* Header */
 
 header {
-  display: flex;
-  justify-content: flex-end;
   position: fixed;
   background-color: #FFFFFF;
   height: 80px;
@@ -58,6 +56,7 @@ header {
   color: #14171F;
   font-weight: 400;
   font-size: 18px;
+
 }
 
 .header-logo {
@@ -115,7 +114,11 @@ header {
   color: #2947A9;
   font-size: 20px;
   line-height: 35px;
+  
 }
+
+
+
 
 .first-block-text {
   max-width: 556px;
@@ -911,8 +914,13 @@ footer {
   }
 }
 
+
+
+
+
 @media (max-width: 1024px) {
-  .container {
+
+  header {
     max-width: 1024px;
   }
 
@@ -924,7 +932,8 @@ footer {
   .header-link {
     margin: 0 10px 0 10px;
     font-size: 14px;
-    max-width: 1024px;
+    /*max-width: 1024px;*/
+
   }
 
   .header-logo {
@@ -939,38 +948,89 @@ footer {
     width: 32px;
     height: auto;
   }
-}
 
-@media (max-width: 600px) {
-  .header-main {
-    margin: 0;
-  }
-
-  .header-logo {
-    margin-left: 19px;
-  }
-
-  .header-link-div{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin-top: 50px;
-    /*width: 140px;*/
-    text-align: center;
-  }
-
-  .container {
-    max-width: 600px;
-  }
-
-  .header-link {
-    border-top: 1px solid #2947A9;
-    padding: 25px 40px;
-    background-color: #FFFFFF;
+  header {
+    max-width: 768px;
   }
 
   .btn-header {
     display: block;
   }
 
+  .btn-header:focus-within  {
+
+  }
+
+
+  .header-link-div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    /*margin-top: 50px;*/
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.3);
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 14px;
+    backdrop-filter: blur(15px);
+  }
+
+  .header-link:nth-child(1) {
+    padding-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .header-link:nth-child(5) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 20px;
+    background-color: #F9995D;
+    color: #FFFFFF;
+
+  }
+
+
+
+}
+
+@media (max-width: 500px) {
+  .main-hero-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+
+  .square {
+    width: 483px;
+  }
+
+  .square-button {
+    width: 245px;
+  }
+
+  .feature-p {
+    margin: 0 20px;
+  }
+
+  .first-block-text {
+    margin-top: 190px;
+  }
+
+  .main-text h1 {
+    font-size: 65px;
+
+    line-height: 65px;
+
+  }
 }

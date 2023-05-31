@@ -56,12 +56,14 @@ export default function Home() {
               <div className='container '>
                   <div className='heading'>
                       <h2>Our Reputation</h2>
+
                   </div>
                   <div className='grid-3-col'>
                       <div className='colum'>
                           <img src="/images/Vector-headphones.svg" alt='VectorHeadphones'></img>
                           <h4>Best Services</h4>
                           <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+
                       </div>
                       <div className='colum'>
                           <img src="/images/Vector-headphones.svg" alt='VectorHEadphones'></img>
