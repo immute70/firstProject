@@ -1002,7 +1002,7 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 390px) {
   .main-hero-div {
     display: flex;
     flex-direction: column;
@@ -1012,7 +1012,7 @@ footer {
   }
 
   .square {
-    width: 483px;
+    width: auto;
   }
 
   .square-button {
