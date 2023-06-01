@@ -1002,7 +1002,9 @@ footer {
 
 }
 
-@media (max-width: 390px) {
+/* 1200 900 700*/
+
+@media (max-width: 700px) {
   .main-hero-div {
     display: flex;
     flex-direction: column;
@@ -1012,11 +1014,12 @@ footer {
   }
 
   .square {
+    max-width: 100%;
     width: auto;
   }
 
   .square-button {
-    width: 245px;
+    width: 247px;
   }
 
   .feature-p {
@@ -1027,10 +1030,11 @@ footer {
     margin-top: 190px;
   }
 
-  .main-text h1 {
-    font-size: 65px;
-
-    line-height: 65px;
+  .first-block-text h1 {
+    dipslay: flex;
+    font-size: 65px !important;
+    justify-content: center;
+    line-height: 65px !important;
 
   }
 }
