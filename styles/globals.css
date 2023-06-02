@@ -1238,8 +1238,27 @@ footer {
 
   .button-container:nth-child(1) {
     margin-left: 10px;
-    margin-right: 10px;
+
   }
 
+/*  Section 7  */
+
+  .form-input-width {
+    max-width: 280px;
+  }
+
+  .form-button p{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .form-text h4 {
+    font-size: 30px;
+  }
+
+  .form-text p {
+    font-size: 18px;
+  }
 
 }
