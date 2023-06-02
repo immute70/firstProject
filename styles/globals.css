@@ -1103,4 +1103,29 @@ footer {
   }
 
 
+/*  Section 4 */
+
+  .flex-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .four-of-blocks {
+    margin-bottom: 60px;
+  }
+
+  .four-of-blocks:last-child {
+    margin-bottom: 0;
+  }
+
+  .text-block {
+    max-width: 380px;
+    padding: 0 20px;
+  }
+
+
+
 }
