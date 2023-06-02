@@ -160,7 +160,7 @@ header {
 
 .square-button {
   position: absolute;
-  width: 208px;
+  width: 50%;
   height: 40px;
   background-color: #292E3D;
   bottom: 0;
@@ -1011,15 +1011,17 @@ footer {
     justify-content: center;
     align-items: center;
     background-position: center;
+    max-width: 700px;
+    min-width: 380px;
   }
 
   .square {
-    max-width: 100%;
+    /*max-width: 100%;*/
     width: auto;
   }
 
   .square-button {
-    width: 247px;
+    /*width: 247px;*/
   }
 
   .feature-p {
@@ -1027,14 +1029,19 @@ footer {
   }
 
   .first-block-text {
-    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 230px;
+    left: 20%;
   }
 
   .first-block-text h1 {
-    dipslay: flex;
-    font-size: 65px !important;
-    justify-content: center;
-    line-height: 65px !important;
 
+    font-size: 60px !important;
+
+    line-height: 65px !important;
+    left: 0;
   }
 }
