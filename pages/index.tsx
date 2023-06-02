@@ -445,11 +445,21 @@ export default function Home() {
                           <input placeholder='Your email here'></input>
                           <a>Subscribe</a>
                       </div>
-                      <p>Social:</p>
-                      <div className='social'>
-                          <img src='/images/icon-facebook.svg'></img>
-                          <img src='/images/icon-linkedin.svg'></img>
-                          <img src='/images/icon-twitter.svg'></img>
+                      <div className='social-mobile'>
+                          <div>
+                              <div className="sec-8-logo-mobile the-box">
+                                  <img src="/images/Group.svg" alt='logo-header' className='Logo'></img>
+                                  <h2><em>The</em>Box</h2>
+                              </div>
+                          </div>
+                          <div>
+                              <p>Social:</p>
+                              <div className='social'>
+                                  <img src='/images/icon-facebook.svg'></img>
+                                  <img src='/images/icon-linkedin.svg'></img>
+                                  <img src='/images/icon-twitter.svg'></img>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
