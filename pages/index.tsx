@@ -93,6 +93,23 @@ export default function Home() {
                   </div>
               </div>
           </div>
+          <div className='section-2-mobile landSection' id='about'>
+              <div className='container'>
+                  <div className='about-end'>
+
+                      <img src="/images/avatar.png" alt="" id='about-img'/>
+
+                      <div className='about-us'>
+                          <h4>About Us</h4>
+                          <p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.  </p>
+                          <p className='p-2'>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+                          <div className='btn-sec-2'>
+                              <a href='#' className='button-section-2'>More on Our History</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
           <div className='section-3 landSection'>
               <div className='container'>
                   <div className='heading'>

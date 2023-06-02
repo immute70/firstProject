@@ -893,6 +893,10 @@ footer {
   margin-right: 18px;
 }
 
+.section-2-mobile {
+  display: none;
+}
+
 
 
 
@@ -1056,6 +1060,47 @@ footer {
 
 /*  Rewrite about section */
 
+  .section-2 {
+    display: none
+  }
+
+  .about-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: none;
+  }
+
+  #about-img {
+    max-width: 380px;
+    min-width: 300px;
+    margin: 0 10px 0 10px;
+    width: auto;
+    height: auto;
+  }
+
+  .about-us {
+    max-width: 380px;
+    min-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+
+  .section-2-mobile {
+    display: flex;
+    margin-top: 80px;
+  }
+
+  .btn-sec-2 {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 40px;
+
+  }
 
 
 }
