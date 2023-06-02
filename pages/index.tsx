@@ -359,6 +359,14 @@ export default function Home() {
                               </div>
                           </div>
 
+                          <div className='sec6-points sec6-points-mobile'>
+                              <div className='circle-points circle-points-blue'></div>
+                              <div className='circle-points'></div>
+                              <div className='circle-points'></div>
+                              <div className='circle-points'></div>
+                              <div className='circle-points'></div>
+                          </div>
+
                           <div className='sec-6-buttons'>
                               <div className='button-container button-left'>
                                   <img src="/Vector-left.svg"></img>

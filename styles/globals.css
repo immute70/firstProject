@@ -897,6 +897,10 @@ footer {
   display: none;
 }
 
+.sec6-points-mobile {
+  display: none;
+}
+
 
 
 
@@ -1169,5 +1173,73 @@ footer {
     margin-bottom: 50px;
     font-size: 16px;
   }
+
+/*  Section 6 */
+
+  .flex-container {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active-block {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .sec-6-text h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+
+  .sec-6-text li:nth-child(1) {
+    padding: 0;
+  }
+
+
+  .point-ul {
+    background-image: none;
+  }
+
+  ul {
+    display: flex;
+
+  }
+
+  .sec-6-text a {
+    font-size: 16px;
+  }
+
+  .publication {
+    padding-top: 40px;
+
+  }
+
+  .container-public {
+    max-width: 330px;
+  }
+
+  .sec6-points {
+    display: none;
+  }
+
+  .sec6-points-mobile {
+    display: flex;
+    padding-top: 30px;
+  }
+
+  .button-container {
+    max-width: 185px;
+    margin-right: 10px;
+  }
+
+  .button-container:nth-child(1) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 
 }
