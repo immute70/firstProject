@@ -1074,7 +1074,7 @@ footer {
   }
 
   #about-img {
-    max-width: 380px;
+    max-width: 360px;
     min-width: 300px;
     margin: 0 10px 0 10px;
     width: auto;
@@ -1082,7 +1082,7 @@ footer {
   }
 
   .about-us {
-    max-width: 380px;
+    max-width: 360px;
     min-width: 300px;
     height: auto;
     margin-bottom: 20px;
