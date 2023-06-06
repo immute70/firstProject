@@ -48,49 +48,54 @@ export default function Header() {
 
 
     // @ts-ignore
-    return (
-        <>
-            <header>
+    try {
+        return (
+            <>
+                <header>
 
-                <div className='header-main header-logo'>
-                    <img src="/images/Group.svg" alt='logo-header' className='Logo'/>
-                </div>
-
-                <div ref={navRef} className='navbar' >
-
-                    <a href='/#'>Home</a>
-                    <a href='/#'>About Us</a>
-                    <a href='/#'>Project</a>
-                    <a href='/#'>Services</a>
-                    <a href='/#'>Contact Us</a>
-                    <div onClick={showNavBar} className='nav-btn nav-close-btn'>
-                        <img src='/images/icons8-close.svg' alt='menu'/>
+                    <div className='header-main header-logo'>
+                        <img src="/images/Group.svg" alt='logo-header' className='Logo'/>
                     </div>
-                </div>
-                <div onClick={showNavBar} className='nav-btn nav-menu-btn'>
-                    <img src='/images/icons8-menu.svg' alt='menu'/>
-                </div>
+
+                    <div ref={navRef} className='navbar'>
+
+                        <a href='/#'>Home</a>
+                        <a href='/#'>About Us</a>
+                        <a href='/#'>Project</a>
+                        <a href='/#'>Services</a>
+                        <a href='/#'>Contact Us</a>
+                        <div onClick={showNavBar} className='nav-btn nav-close-btn'>
+                            <img src='/images/icons8-close.svg' alt='menu'/>
+                        </div>
+                    </div>
+                    <div onClick={showNavBar} className='nav-btn nav-menu-btn'>
+                        <img src='/images/icons8-menu.svg' alt='menu'/>
+                    </div>
 
 
-                {/*<div>*/}
-                {/*    <div className='header-main header-link-div container'>*/}
-                {/*        <Link href='/' className='header-link home'>Home</Link>*/}
-                {/*        <Link href='#about' className='header-link about'>About Us</Link>*/}
-                {/*        <Link href='#project' className='header-link projects'>Projects</Link>*/}
-                {/*        <Link href='/' className='header-link services'>Services</Link>*/}
-                {/*        <Link href='/' className='header-link contact-us'>Contact Us</Link>*/}
-                {/*    </div>*/}
+                    {/*<div>*/}
+                    {/*    <div className='header-main header-link-div container'>*/}
+                    {/*        <Link href='/' className='header-link home'>Home</Link>*/}
+                    {/*        <Link href='#about' className='header-link about'>About Us</Link>*/}
+                    {/*        <Link href='#project' className='header-link projects'>Projects</Link>*/}
+                    {/*        <Link href='/' className='header-link services'>Services</Link>*/}
+                    {/*        <Link href='/' className='header-link contact-us'>Contact Us</Link>*/}
+                    {/*    </div>*/}
 
-                {/*    /!*{(toggleMenu || screenWidth > 500) && (*!/*/}
-                {/*    /!*    *!/*/}
-                {/*    /!*)}*!/*/}
-
-
-                {/*    <img src='/images/icons8-menu.svg'  className='btn-header'/>*/}
-                {/*</div>*/}
+                    {/*    /!*{(toggleMenu || screenWidth > 500) && (*!/*/}
+                    {/*    /!*    *!/*/}
+                    {/*    /!*)}*!/*/}
 
 
-            </header>
-        </>
-    )
+                    {/*    <img src='/images/icons8-menu.svg'  className='btn-header'/>*/}
+                    {/*</div>*/}
+
+                </header>
+            </>
+        )
+    } catch (error) {
+        // Optionally, you can log the error or perform some other action
+        console.error('Ignoring error:', error);
+        return null; // Or return a fallback component or an empty fragment
+    }
 }
