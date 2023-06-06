@@ -48,7 +48,6 @@ export default function Header() {
 
 
     // @ts-ignore
-    try {
         return (
             <>
                 <header>
@@ -57,7 +56,8 @@ export default function Header() {
                         <img src="/images/Group.svg" alt='logo-header' className='Logo'/>
                     </div>
 
-                    <div ref={navRef} className='navbar'>
+                    <div // @ts-ignore
+                        ref = {navRef} className='navbar'>
 
                         <a href='/#'>Home</a>
                         <a href='/#'>About Us</a>
@@ -93,9 +93,4 @@ export default function Header() {
                 </header>
             </>
         )
-    } catch (error) {
-        // Optionally, you can log the error or perform some other action
-        console.error('Ignoring error:', error);
-        return null; // Or return a fallback component or an empty fragment
-    }
 }
