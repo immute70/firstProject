@@ -42,10 +42,12 @@ export default function Header() {
     const navRef = useRef();
 
     const showNavBar = () => {
+        // @ts-ignore
         navRef.current.classList.toggle('responsive_navbar')
     }
 
 
+    // @ts-ignore
     return (
         <>
             <header>
@@ -55,6 +57,7 @@ export default function Header() {
                 </div>
 
                 <div ref={navRef} className='navbar' >
+
                     <a href='/#'>Home</a>
                     <a href='/#'>About Us</a>
                     <a href='/#'>Project</a>
