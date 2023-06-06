@@ -4,6 +4,7 @@ import {Work_Sans} from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from "next/link";
 import {useState, useEffect} from "react";
+import { useRef } from "react";
 
 
 const inter = Work_Sans({ subsets: ['latin'] })
@@ -38,7 +39,11 @@ export default function Header() {
     // create a fun
 
 
+    const navRef = useRef();
 
+    const showNavBar = () => {
+        navRef.current.classList.toggle('responsive_navbar')
+    }
 
 
     return (
@@ -47,6 +52,20 @@ export default function Header() {
 
                 <div className='header-main header-logo'>
                     <img src="/images/Group.svg" alt='logo-header' className='Logo'/>
+                </div>
+
+                <div ref={navRef} className='navbar' >
+                    <a href='/#'>Home</a>
+                    <a href='/#'>About Us</a>
+                    <a href='/#'>Project</a>
+                    <a href='/#'>Services</a>
+                    <a href='/#'>Contact Us</a>
+                    <div onClick={showNavBar} className='nav-btn nav-close-btn'>
+                        <img src='/images/icons8-close.svg' alt='menu'/>
+                    </div>
+                </div>
+                <div onClick={showNavBar} className='nav-btn nav-menu-btn'>
+                    <img src='/images/icons8-menu.svg' alt='menu'/>
                 </div>
 
 
@@ -66,6 +85,7 @@ export default function Header() {
 
                 {/*    <img src='/images/icons8-menu.svg'  className='btn-header'/>*/}
                 {/*</div>*/}
+
 
             </header>
         </>

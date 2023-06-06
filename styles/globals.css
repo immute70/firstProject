@@ -35,6 +35,9 @@ html {
 /* Header */
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   background-color: #FFFFFF;
   height: 80px;
@@ -60,9 +63,9 @@ header {
 }
 
 .header-logo {
-  position: absolute;
-  top: 16px;
-  left: 1px;
+  /*position: absolute;*/
+  /*top: 16px;*/
+  /*left: 1px;*/
   cursor: pointer;
 }
 
@@ -76,13 +79,27 @@ header {
   font-weight: 600;
 }
 
-.btn-header {
+.nav-btn {
   display: none;
-  position: absolute;
-  right: 15px;
-  top: 22px;
   cursor: pointer;
 }
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #14171F;
+  margin-right: 50px;
+}
+
+.navbar a:nth-child(5) {
+  margin-right: 80px;
+  font-weight: 600;
+  color: #F9995D;
+}
+
+
 
 
 /* Main section */
@@ -930,22 +947,51 @@ footer {
 
 
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
-  header {
-    max-width: 1024px;
+  .nav-btn {
+    display: block;
   }
 
-  .header-main {
-    margin: 0 20px 0 20px;
-    /*min-width: 1024px;*/
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 2.2rem;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 10;
   }
 
-  .header-link {
-    margin: 0 10px 0 10px;
-    font-size: 14px;
-    /*max-width: 1024px;*/
+  .navbar a {
+    margin: 0;
+  }
 
+  .navbar a:nth-child(5) {
+    margin: 0;
+  }
+
+  .nav-menu-btn {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+
+  .responsive_navbar {
+    transform: none;
   }
 
   .header-logo {
@@ -965,13 +1011,9 @@ footer {
     max-width: 768px;
   }
 
-  .btn-header {
-    display: block;
-  }
 
-  .btn-header:focus-within  {
 
-  }
+
 
 
   .header-link-div {
@@ -1017,6 +1059,10 @@ footer {
 /* 1200 900 700*/
 
 @media (max-width: 700px) {
+
+  /* Header */
+
+
   .main-hero-div {
     display: flex;
     flex-direction: column;
@@ -1308,4 +1354,11 @@ footer {
     font-size: 14px;
   }
 
+
 }
+
+
+
+
+
+
