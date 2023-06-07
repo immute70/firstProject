@@ -19,6 +19,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
+  overflow-x: hidden;
 
 }
 
@@ -30,6 +31,7 @@ html {
 .container {
   max-width: 1200px;
   margin: 0px auto;
+  overflow: hidden;
 }
 
 .landSection {
@@ -116,6 +118,7 @@ header {
   height: 100vh;
   /*transition: 1s;*/
   transition-duration: 0.5s;
+  overflow: hidden;
 }
 
 .main-hero {
