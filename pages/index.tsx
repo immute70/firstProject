@@ -25,33 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          <div className='main-hero-div'>
-              {/*<img src={hero} alt='main-background' className='main-hero'></img>*/}
-              <div className='main-text the-box'>
-                <h2><em>The</em>Box</h2>
-              </div>
-              <div className='main-text first-block-text'>
-                  <h1>Building things is our mission.</h1>
-              </div>
-              <div className='feature-block'>
-                    <div className='square'>
-                        <div className='feature-heading'><h3>Feature Projects</h3></div>
-                        <div className='feature-p'><p>The National University of Architecture</p></div>
-                        <div className='square-button square-button-left'>
-                            <div className='inside-button'>
-                                <img src="/Vector-left.svg"></img>
-                                <p className='button-text'>Back</p>
-                            </div>
-                        </div>
-                        <div className='square-button square-button-right'>
-                            <div className='inside-button'>
-                                <p className='button-text'>Next</p>
-                                <img src="/Vector-right.svg"></img>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-          </div>
+
           <div className='section-1 landSection'>
               <div className='container '>
                   <div className='heading'>

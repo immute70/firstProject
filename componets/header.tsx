@@ -10,34 +10,6 @@ import { useRef } from "react";
 const inter = Work_Sans({ subsets: ['latin'] })
 
 export default function Header() {
-    // const [toggleMenu, setToggleMenu] = useState(false)
-    //
-    // // const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-    //
-    // const toggleNav = () => {
-    //     setToggleMenu(!toggleMenu)
-    // }
-    //
-    // const [screenWidth, setScreenWidth] = useState(
-    //     typeof window !== 'undefined' ? window.innerWidth : 0
-    // );
-    //
-    // useEffect(() => {
-    //
-    //     const changeWidth = () => {
-    //         setScreenWidth(window.innerWidth)
-    //     }
-    //
-    //     window.addEventListener('resize', changeWidth)
-    //
-    //     return () => {
-    //         window.removeEventListener('resize', changeWidth);
-    //     };
-    //
-    // }, []);
-
-    // create a fun
-
 
     const navRef = useRef();
 
