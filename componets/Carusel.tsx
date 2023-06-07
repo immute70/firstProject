@@ -5,17 +5,17 @@ export default function Carusel() {
 
     const slides = [
         {
-            url: '/images/Hero.svg',
+            url: '/images/Hero.png',
             firstBlockText: 'Building things is our mission.',
             featureP: 'The National University of Architecture',
         },
         {
-            url: '/images/hero2.svg',
+            url: '/images/hero2.png',
             firstBlockText: 'Building things is our mission.',
             featureP: 'Willis Tower (formerly Sears Tower)',
         },
         {
-            url: '/images/hero3.svg',
+            url: '/images/hero3.png',
             firstBlockText: 'Building things is our mission.',
             featureP: 'International Commerce Centre',
         }
