@@ -100,6 +100,11 @@ header {
   margin-right: 50px;
 }
 
+.navbar a:hover {
+    color: #2947A9;
+    transition: 0.5s;
+}
+
 .navbar a:nth-child(5) {
   margin-right: 80px;
   font-weight: 600;
@@ -340,8 +345,16 @@ header {
   color: #2947A9;
   background-color: #FFFFFF;
   padding: 16px 20px 16px 20px;
-  border: 2px solid #2947A9;
+  /*border: 1px solid #2947A9;*/
   border-radius: 6px;
+
+}
+
+.button-section-2:hover {
+  border: 3px solid #FFFFFF;
+  transition: 0.5s;
+  background-color: #2947A9;
+  color: #FFFFFF;
 
 }
 
@@ -501,20 +514,19 @@ header {
   line-height: 21px;
 }
 
+.text-block a:hover {
+  background-color: #627FDE;
+  transition: 0.5s;
+}
+
 /* Section 5 */
 
 .section-5 {
   display: flex;
-
-  /*position: relative;*/
-
   align-items: center;
   justify-content: space-between;
-
   background-image: url(/images/background-sect5.svg);
-
   height: 300px;
-
 }
 
 .flex-sec-5 {
@@ -552,9 +564,19 @@ header {
   padding: 14px;
 }
 
+.sec-5-button a:hover {
+  background-color: #FFFFFF;
+  color: #292E3D;
+  transition: 0.5s;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+.publication-blocks {
+  transition: 0.5s;
 }
 
 .publication {
@@ -661,6 +683,12 @@ li {
   background-color: #292E3D;
   width: 295px;
   height: 64px;
+  cursor: pointer;
+}
+
+.button-container:hover {
+  background-color: #3D445C;
+  transition: 0.5s;
 }
 
 .button-container a {
@@ -826,6 +854,11 @@ footer {
   margin-top: 28px;
 }
 
+.button-below-form a:hover {
+  background-color: #627FDE;
+  transition: 0.5s;
+}
+
 .button-below-form a {
   display: flex;
   flex-direction: row;
@@ -900,6 +933,11 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.form-and-button a:hover {
+    background-color: #FCB88E;
+    transition: 0.5s;
 }
 
 .form-and-button input {
@@ -1010,6 +1048,8 @@ footer {
   .navbar a {
     margin: 0;
   }
+
+
 
   .navbar a:nth-child(5) {
     margin: 0;
