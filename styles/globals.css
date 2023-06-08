@@ -21,6 +21,7 @@ body {
   -webkit-scroll-behavior: smooth;
   overflow-x: hidden;
 
+
 }
 
 html {
@@ -322,11 +323,12 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 700px;
+  /*height: 700px;*/
   width: 100%;
   background-image: url(/images/avatar.png);
   background-repeat: no-repeat;
 }
+
 
 
 .button-section-2 {
@@ -1134,7 +1136,7 @@ footer {
 
   .first-block-text h1 {
 
-    font-size: 60px !important;
+    font-size: 50px !important;
 
     line-height: 65px !important;
     left: 0;
@@ -1257,8 +1259,12 @@ footer {
   }
 
   .sec-5-text p {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     font-size: 16px;
+  }
+
+  .sec-5-button {
+    padding: 20px 20px;
   }
 
 /*  Section 6 */
