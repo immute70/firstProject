@@ -1449,6 +1449,61 @@ footer {
 }
 
 
+/* About Us section */
+
+.about-text {
+  /*margin: 0 20px 0 20px;*/
+}
+
+.about-text h1 {
+  display: flex;
+  justify-content: flex-start;
+    /*align-items: center;*/
+    /*flex-direction: column;*/
+  /*margin-top: 100px;*/
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  /*margin-bottom: 10px;*/
+  margin: 100px 20px 10px 20px;
+}
+
+.about-text h2 {
+  /*margin-top: 32px;*/
+  /*margin-bottom: 16px;*/
+  margin: 32px 20px 16px 20px;
+}
+
+.about-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 32px 20px 16px 20px;
+}
+
+.flex-about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-about-logo img {
+  margin-top: 30px;
+  width: 60px;
+}
+
+.flex-about-logo h2 {
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
 
 
 

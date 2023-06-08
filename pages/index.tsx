@@ -4,6 +4,8 @@ import { useState } from "react";
 import styles from '@/styles/Home.module.css'
 import Carousel from "@/componets/Carusel";
 import CarouselSec6 from "@/componets/CarouselSec6";
+import Header from "@/componets/header";
+import Footer from "@/componets/footer";
 
 
 
@@ -11,12 +13,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-    const [toggleState, setToggleState] = useState(1)
 
-    // @ts-ignore
-    const toggleTab = (index) => {
-        setToggleState(index)
-    }
+
 
   return (
     <>
@@ -27,6 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+          <Header></Header>
+          <Carousel></Carousel>
 
           
 
@@ -65,7 +65,7 @@ export default function Home() {
                           <p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.  </p>
                           <p className='p-2'>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
                           <div className='btn-sec-2'>
-                              <a href='#' className='button-section-2'>More on Our History</a>
+                              <a href='/pages/AboutUs' className='button-section-2'>More on Our History</a>
                           </div>
                       </div>
                   </div>
@@ -266,6 +266,8 @@ export default function Home() {
                   </div>
               </div>
           </div>
+
+          <Footer></Footer>
       </main>
     </>
   )

@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Link from "next/link";
 import {useState, useEffect} from "react";
 import { useRef } from "react";
+import Home from "@/pages";
 
 
 const inter = Work_Sans({ subsets: ['latin'] })
@@ -31,11 +32,11 @@ export default function Header() {
                     <div // @ts-ignore
                         ref = {navRef} className='navbar'>
 
-                        <a href='/#'>Home</a>
-                        <a href='/#'>About Us</a>
-                        <a href='/#'>Project</a>
-                        <a href='/#'>Services</a>
-                        <a href='/#'>Contact Us</a>
+                        <Link href='/pages/index'>Home</Link>
+                        <Link href='/pages/AboutUs'>About Us</Link>
+                        <Link href='/#'>Project</Link>
+                        <Link href='/#'>Services</Link>
+                        <Link href='/pages/ContactUs'>Contact Us</Link>
                         <div onClick={showNavBar} className='nav-btn nav-close-btn'>
                             <img src='/images/icons8-close.svg' alt='menu'/>
                         </div>
@@ -43,25 +44,6 @@ export default function Header() {
                     <div onClick={showNavBar} className='nav-btn nav-menu-btn'>
                         <img src='/images/icons8-menu.svg' alt='menu'/>
                     </div>
-
-
-                    {/*<div>*/}
-                    {/*    <div className='header-main header-link-div container'>*/}
-                    {/*        <Link href='/' className='header-link home'>Home</Link>*/}
-                    {/*        <Link href='#about' className='header-link about'>About Us</Link>*/}
-                    {/*        <Link href='#project' className='header-link projects'>Projects</Link>*/}
-                    {/*        <Link href='/' className='header-link services'>Services</Link>*/}
-                    {/*        <Link href='/' className='header-link contact-us'>Contact Us</Link>*/}
-                    {/*    </div>*/}
-
-                    {/*    /!*{(toggleMenu || screenWidth > 500) && (*!/*/}
-                    {/*    /!*    *!/*/}
-                    {/*    /!*)}*!/*/}
-
-
-                    {/*    <img src='/images/icons8-menu.svg'  className='btn-header'/>*/}
-                    {/*</div>*/}
-
                 </header>
             </>
         )
