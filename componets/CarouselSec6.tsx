@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { RxDotFilled } from "react-icons/rx";
 
 
 
@@ -74,8 +75,10 @@ export default function CarouselSec6() {
         setCurrentIndex(newIndex);
     };
 
-
-
+    // @ts-ignore
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+    }
 
     return (
 
@@ -87,10 +90,10 @@ export default function CarouselSec6() {
                     <div className='sec-6-text'>
                         <h4>Projects</h4>
                         <ul>
-                            <li className={currentIndex === 1 ? "point-ul" : ""} onClick={() => toggleTab(1)}><a>All</a></li>
-                            <li className={currentIndex === 2 ? "point-ul" : ""} onClick={() => toggleTab(2)}><a>Commercial</a></li>
-                            <li className={currentIndex === 3 ? "point-ul" : ""} onClick={() => toggleTab(3)}><a>Residential</a></li>
-                            <li className={currentIndex === 4 ? "point-ul" : ""} onClick={() => toggleTab(4)}><a>Other</a></li>
+                            <li className={currentIndex === 0 ? "point-ul" : ""} onClick={() => toggleTab(0)}><a>All</a></li>
+                            <li className={currentIndex === 1 ? "point-ul" : ""} onClick={() => toggleTab(1)}><a>Commercial</a></li>
+                            <li className={currentIndex === 2 ? "point-ul" : ""} onClick={() => toggleTab(2)}><a>Residential</a></li>
+                            <li className={currentIndex === 3 ? "point-ul" : ""} onClick={() => toggleTab(3)}><a>Other</a></li>
                         </ul>
                     </div>
 
@@ -229,12 +232,11 @@ export default function CarouselSec6() {
                             </div>
                         </div>
 
-                        <div className='sec6-points sec6-points-mobile'>
-                            <div className='circle-points circle-points-blue'></div>
-                            <div className='circle-points'></div>
-                            <div className='circle-points'></div>
-                            <div className='circle-points'></div>
-                            <div className='circle-points'></div>
+                        <div className='sec6-points-mobile'>
+                                {slides.map((slide, slideIndex) => (
+                                        <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={currentIndex === slideIndex ? 'circle-points circle-points-blue' : 'circle-points'}></div>
+                                    )
+                                )}
                         </div>
 
                         <div className='sec-6-buttons'>
@@ -242,12 +244,11 @@ export default function CarouselSec6() {
                                 <img src="/Vector-left.svg"></img>
                                 <a>Back</a>
                             </div>
-                            <div className='sec6-points'>
-                                <div className='circle-points circle-points-blue'></div>
-                                <div className='circle-points'></div>
-                                <div className='circle-points'></div>
-                                <div className='circle-points'></div>
-                                <div className='circle-points'></div>
+                            <div className='sec6-points '>
+                                {slides.map((slide, slideIndex) => (
+                                    <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={currentIndex === slideIndex ? 'circle-points circle-points-blue' : 'circle-points'}></div>
+                                )
+                                )}
                             </div>
                             <div className='button-container button-right' onClick={nextSlide}>
                                 <a>Next</a>

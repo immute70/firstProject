@@ -705,10 +705,13 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 33px;
+  padding: 0px 49px;
   gap: 16px;
-
+  cursor: pointer;
 }
+
+
+
 
 
 .circle-points {
@@ -1361,6 +1364,11 @@ footer {
 
   .sec6-points-mobile {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
     padding-top: 30px;
   }
 
