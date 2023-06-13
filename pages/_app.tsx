@@ -8,7 +8,7 @@ import ContactUs from '@/pages/ContactUs';
 import { useEffect, useState } from 'react';
 
 import Home from '@/pages/index';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
@@ -33,11 +33,12 @@ export default function App() {
       <div>
         <BrowserRouter>
            <Routes>
-                <Route path="/pages/index" element={<Home />} />
-                <Route path="/pages/AboutUs" element={<AboutUs />} />
-                <Route path="/pages/ContactUs" element={<ContactUs />} />
+                <Route path='/pages/index' element={<Home />} />
+                <Route path='/pages/AboutUs' element={<AboutUs />} />
+                <Route path='/pages/ContactUs' element={<ContactUs />} />
            </Routes>
         </BrowserRouter>
       </div>
   )
 }
+
