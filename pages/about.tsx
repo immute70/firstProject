@@ -8,7 +8,7 @@ export default function About() {
 
     return (
         <div>
-            <Header></Header>
+
 
             <div className='landSection'>
                 <div className='about-text container'>
@@ -30,7 +30,7 @@ export default function About() {
                 </div>
             </div>
 
-            <Footer></Footer>
+
         </div>
 
     )
