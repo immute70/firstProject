@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <main>
 
-
+          <Carousel></Carousel>
 
           
 
@@ -65,7 +65,7 @@ export default function Home() {
                           <p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.  </p>
                           <p className='p-2'>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
                           <div className='btn-sec-2'>
-                              <a href='/pages/AboutUs' className='button-section-2'>More on Our History</a>
+                              <a href='/pages/about.tsx' className='button-section-2'>More on Our History</a>
                           </div>
                       </div>
                   </div>

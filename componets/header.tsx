@@ -26,17 +26,17 @@ export default function Header() {
                 <header>
 
                     <div className='header-main header-logo'>
-                        <img src="/images/Group.svg" alt='logo-header' className='Logo'/>
+                        <img src="/images/Group.svg" alt='logo-header' className='Logo'></img>
                     </div>
 
                     <div // @ts-ignore
                         ref = {navRef} className='navbar'>
 
-                        <Link href='/pages/index'>Home</Link>
-                        <Link href='/pages/AboutUs'>About Us</Link>
-                        <Link href='/#'>Project</Link>
-                        <Link href='/#'>Services</Link>
-                        <Link href='/pages/ContactUs'>Contact Us</Link>
+                        <Link href='/'>Home</Link>
+                        <Link href='/about'>About Us</Link>
+                        <Link href='/projects'>Project</Link>
+                        <Link href='/'>Services</Link>
+                        <Link href='/contact'>Contact Us</Link>
                         <div onClick={showNavBar} className='nav-btn nav-close-btn'>
                             <img src='/images/icons8-close.svg' alt='menu'/>
                         </div>

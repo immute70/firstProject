@@ -3,13 +3,14 @@ import type {AppProps} from 'next/app'
 import Header from "@/componets/header";
 import Footer from "@/componets/footer";
 import Carousel from "@/componets/Carusel";
-import AboutUs from '@/pages/AboutUs';
-import ContactUs from '@/pages/ContactUs';
+import About from '@/pages/about';
+import ContactUs from '@/pages/contact';
 import {Children, useEffect, useState} from 'react';
 
 import Home from '@/pages/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {Props} from "next/script";
+import '../styles/projects.scss'
 
 
 
@@ -35,12 +36,12 @@ export default function App({ Component, pageProps }: AppProps) {
         {/*<BrowserRouter>*/}
         {/*   <Routes>*/}
         {/*        <Route path='/pages/index' element={<Home />} />*/}
-        {/*        <Route path='/pages/AboutUs' element={<AboutUs />} />*/}
+        {/*        <Route path='/pages/About' element={<About />} />*/}
         {/*        <Route path='/pages/ContactUs' element={<ContactUs />} />*/}
         {/*   </Routes>*/}
         {/*</BrowserRouter>*/}
         <Header></Header>
-        <Carousel></Carousel>
+
           <Component {...pageProps} />
         <Footer></Footer>
 

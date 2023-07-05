@@ -4,19 +4,11 @@ import Footer from "@/componets/footer";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function AboutUs() {
+export default function Projects() {
 
     return (
         <div>
-            <Header></Header>
-
-            <div>
-
-                <div>Contact us</div>
-
-            </div>
-
-            <Footer></Footer>
+            <h1 className='test-title'>Hello world</h1>
         </div>
 
     )
