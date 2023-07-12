@@ -1,4 +1,166 @@
-.test-title {
-  color: red;
-  padding: 100px 0px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.weather-app {
+  background-color: #D6D7DB;
+  color: #14171F;
+  padding: 150px 50px 100px;
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background-color: white;
+    border-radius: 40px;
+}
+
+.search {
+  display: flex;
+  background-color: white;
+  margin: 40px 0 40px;
+}
+
+.search img {
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.search img:last-child {
+  background-color: #F7F6F9;
+  cursor: pointer;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.info-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  //align-items: center;
+  padding: 0 40px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.info-box p {
+  font-size: 3rem;
+}
+
+.info-box h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: rgb(156, 163, 175);
+  font-size: 17px;
+}
+
+.info-box span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #14171F;
+}
+
+.info-box:nth-child(2) p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+
+
+
+.wind-status h4 {
+  font-weight: 300;
+}
+
+.status-info {
+  background-color: #F7F6F9;
+  padding: 50px;
+  border-radius: 0 40px 40px 0;
+}
+
+.status-info h1 {
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+
+.status-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 30px;
+  width: 100%;
+  height: 100vh;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f8f8;
+  border-radius: 15px;
+  font-size: 3rem;
+  font-weight: 500;
+  background-image: url("../public/project-image/backgroundtown1.png");
+  width: 250px;
+  height: 85px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.temp {
+  font-size: 5.5rem;
+  font-weight: 400;
+}
+
+.day {
+  font-size: 1.5rem;
+  //font-weight: 400;
+  //margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.time {
+  color: rgb(156 163 175);
+}
+
+.underline-2 {
+  width: 240px;
+  margin: 30px 0;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+
 }
