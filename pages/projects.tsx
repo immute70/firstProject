@@ -7,7 +7,7 @@ export default function Projects() {
   const [location, setLocation] = useState("");
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=8e899e2d9422345bc0870c635282637c&units=metric`;
-
+  // @ts-ignore
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       axios.get(url).then((response) => {
