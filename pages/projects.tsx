@@ -11,7 +11,9 @@ export default function Projects() {
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       axios.get(url).then((response) => {
+        // @ts-ignore
         setData(response.data);
+        // @ts-ignore
         console.log(response.data);
       });
       setLocation("");
@@ -36,7 +38,7 @@ export default function Projects() {
               value={location}
               onChange={(event) => setLocation(event.target.value)}
               onKeyPress={searchLocation}
-              placeholder="Seacrh for places..."
+              placeholder="Search for places..."
               type="text"
             ></input>
             <img
@@ -45,10 +47,10 @@ export default function Projects() {
             ></img>
           </div>
           <div className="location">
-            <p>{data.name}</p>
+            <p>{data?.name}</p>
           </div>
           <div className="temp">
-            {data.main ? <p>{data.main.temp.toFixed()}°C</p> : null}
+            {data?.main ? <p>{data.main.temp.toFixed()}°C</p> : null}
           </div>
           <div className="day">
             <p>
@@ -57,7 +59,7 @@ export default function Projects() {
           </div>
           <div className="underline underline-2"></div>
           <div className="description">
-            {data.weather ? (
+            {data?.weather ? (
               <p>
                 {data.weather[0].description.charAt(0).toUpperCase() +
                   data.weather[0].description.slice(1)}
@@ -73,21 +75,21 @@ export default function Projects() {
           <div className="status-grid">
             <div className="wind-status info-box">
               <h4>Wind Status</h4>
-              {data.wind ? (
+              {data?.wind ? (
                 <p>
                   {data.wind.speed.toFixed()}
-                  <span>km/h</span>
+                  <span>mph/h</span>
                 </p>
               ) : null}
             </div>
             <div className="sunrise info-box">
-              <h4>Sunrise & SunSet</h4>
+              <h4>Sunrise & Sunset</h4>
               <p>5:22 AM</p>
               <p>20:34 PM</p>
             </div>
             <div className="Humidity info-box">
               <h4>Humidity</h4>
-              {data.main ? (
+              {data?.main ? (
                 <p>
                   {data.main.humidity}
                   <span>%</span>
@@ -96,7 +98,7 @@ export default function Projects() {
             </div>
             <div className="Visibility info-box">
               <h4>Feels like</h4>
-              {data.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
+              {data?.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
             </div>
           </div>
         </div>
