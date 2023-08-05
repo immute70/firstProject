@@ -17,7 +17,7 @@ interface WeatherData {
 }
 
 export default function Projects() {
-  const [data, setData] = useState<WeatherData>({});
+  const [data, setData] = useState<WeatherData>({} as WeatherData);
 
   const [location, setLocation] = useState("");
 
@@ -91,7 +91,7 @@ export default function Projects() {
               {data.wind ? (
                 <p>
                   {data.wind.speed.toFixed()}
-                  <span>km/h</span>
+                  <span>mph/h</span>
                 </p>
               ) : null}
             </div>
