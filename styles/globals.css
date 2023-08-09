@@ -1078,6 +1078,11 @@ footer {
     margin: 0 60px 0 30px;
   }
 
+  .contact-us-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
 
 }
 
