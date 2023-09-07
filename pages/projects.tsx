@@ -1,8 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+interface WeatherData {
+  name: string;
+  main: {
+    temp: number;
+    feels_like: number;
+    humidity: number;
+  };
+  wind: {
+    speed: number;
+  };
+  weather: {
+    description: string;
+  }[];
+}
+
 export default function Projects() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState<WeatherData>({} as WeatherData);
 
   const [location, setLocation] = useState("");
 

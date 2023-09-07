@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   margin: 0;
   padding: 0;
@@ -152,6 +155,43 @@ a {
 .description {
   font-size: 1rem;
   font-weight: 500;
+}
+
+@media (max-width: 1028px) {
+  .grid-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-box {
+    height: 150px;
+    width: 200px;
+  }
+  .status-info h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .status-grid {
+    justify-content: center;
+  }
+  .info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .info-flex:nth-child(0) {
+    flex-wrap: nowrap;
+  }
+  .search {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+  .weather-app {
+    padding: 100px 0 99px;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */
